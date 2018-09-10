@@ -42,8 +42,8 @@ function total() {
   for(var i = 0; i < cart.length; i++) {
   var sum = 0;
   sum += cart[i];
-  return cart.reduce();
   }
+  return cart.reduce();
 }
 
 function removeFromCart(item) {
