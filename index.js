@@ -11,14 +11,37 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
+ // passed in string = 'item'
+ 
+var price = Math.floor((Math.random() * 100));
+
+var shopItem = {itemName: item,
+  itemPrice: price};
+  
+cart.push(shopItem);
+return `${item} has been added to your cart.`;
+
 }
 
 function viewCart() {
   // write your code here
+  
+  if(cart.length === 0) {
+    return 'Your shopping cart is empty.';
+  } else {
+    
+    var arr = [];
+    for(var i = 0; i < cart.length; i++) {
+     
+  }
+    return `In your cart, you have ${ arr.join(", ") }.`;
+  }
 }
 
 function total() {
-  // write your code here
+  for(var i = 0; i < cart.length; i++) {
+     
+  }
 }
 
 function removeFromCart(item) {
