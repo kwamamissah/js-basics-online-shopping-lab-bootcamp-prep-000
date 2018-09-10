@@ -43,6 +43,7 @@ function total() {
   var sum = 0;
   sum += cart[i];
   }
+  return 
 }
 
 function removeFromCart(item) {
